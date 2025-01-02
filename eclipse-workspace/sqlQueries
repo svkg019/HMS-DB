@@ -1,0 +1,75 @@
+--CREATE TABLE User (
+--    userId TEXT PRIMARY KEY,
+--    fullName TEXT NOT NULL,
+--    email TEXT NOT NULL,
+--    phoneNumber TEXT NOT NULL,
+--    password TEXT NOT NULL
+--);
+
+--SELECT * FROM User;
+
+--CREATE TABLE Room (
+--    roomNumber INTEGER PRIMARY KEY,
+--    roomType INTEGER NOT NULL,
+--    place TEXT NOT NULL,
+--    price INTEGER NOT NULL,
+--    isBooked BOOLEAN NOT NULL,
+--    dateOfAvailability TEXT NOT NULL DEFAULT (date('now')),
+--    bookingId INTEGER,
+--    FOREIGN KEY (bookingId) REFERENCES Booking(bookingId)
+--);
+
+--INSERT INTO Room (roomNumber, roomType, place, price, isBooked, dateOfAvailability, bookingId) VALUES
+--(101, 1, 'Kolkata', 1000, 0, date('now'), NULL),
+--(102, 2, 'Darjeeling', 2000, 0, date('now'), NULL),
+--(103, 3, 'Kolkata', 3000, 0, date('now'), NULL),
+--(104, 1, 'Darjeeling', 1000, 0, date('now'), NULL),
+--(105, 2, 'Kolkata', 2000, 0, date('now'), NULL),
+--(106, 3, 'Darjeeling', 3000, 0, date('now'), NULL),
+--(107, 1, 'Kolkata', 1000, 0, date('now'), NULL),
+--(108, 2, 'Darjeeling', 2000, 0, date('now'), NULL),
+--(109, 3, 'Kolkata', 3000, 0, date('now'), NULL),
+--(110, 1, 'Darjeeling', 1000, 0, date('now'), NULL),
+--(111, 2, 'Kolkata', 2000, 0, date('now'), NULL),
+--(112, 3, 'Darjeeling', 3000, 0, date('now'), NULL),
+--(113, 1, 'Kolkata', 1000, 0, date('now'), NULL),
+--(114, 2, 'Darjeeling', 2000, 0, date('now'), NULL),
+--(115, 3, 'Kolkata', 3000, 0, date('now'), NULL),
+--(116, 1, 'Darjeeling', 1000, 0, date('now'), NULL),
+--(117, 2, 'Kolkata', 2000, 0, date('now'), NULL),
+--(118, 3, 'Darjeeling', 3000, 0, date('now'), NULL),
+--(119, 1, 'Kolkata', 1000, 0, date('now'), NULL);
+
+--CREATE TABLE PaymentDetails (
+--    userId TEXT NOT NULL,
+--    cardHolderName TEXT NOT NULL,
+--    cardNumber TEXT NOT NULL,
+--    cvv INTEGER NOT NULL,
+--    expiryDate TEXT NOT NULL,
+--    FOREIGN KEY (userId) REFERENCES User(userId)
+--);
+
+--CREATE TABLE Complaint (
+--    userId TEXT NOT NULL,
+--    contactNumber TEXT NOT NULL,
+--    roomNumber INTEGER NOT NULL,
+--    typeOfComplaint TEXT NOT NULL,
+--    feedbackRating TEXT NOT NULL,
+--    FOREIGN KEY (userId) REFERENCES User(userId)
+--);
+
+--CREATE TABLE Booking (
+--    bookingId INTEGER PRIMARY KEY AUTOINCREMENT,
+--    customerId TEXT NOT NULL,
+--    name TEXT NOT NULL,
+--    mobileNumber TEXT NOT NULL,
+--    email TEXT NOT NULL,
+--    location TEXT NOT NULL,
+--    roomType INTEGER NOT NULL,
+--    checkInDate TEXT NOT NULL,
+--    checkOutDate TEXT NOT NULL,
+--    charge REAL NOT NULL,
+--    roomNumber INTEGER NOT NULL,
+--    FOREIGN KEY (customerId) REFERENCES User(userId)
+--);
+
