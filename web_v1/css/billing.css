@@ -1,0 +1,37 @@
+main h1 {
+    margin-bottom: 20px;
+}
+
+.billing-inner {
+    display: flex; justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+}
+
+main hr {
+    margin-bottom: 10px;
+}
+
+.billing-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    gap: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+.billing-outer {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 9px 18px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 9px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow:0px 9px 18px -5px rgba(0,0,0,0.75);
+    max-width: 750px;
+    margin: 0 auto;
+}

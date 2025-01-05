@@ -1,0 +1,67 @@
+/* .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.booking-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-details {
+    flex-grow: 1;
+}
+
+.booking-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.booking-status {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.price{
+    margin: 10px;
+}
+.details{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+}
+.checkin{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.booking{
+    display: flex;
+    justify-content: space-between;
+}

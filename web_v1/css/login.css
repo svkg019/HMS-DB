@@ -1,0 +1,210 @@
+/**
+* ! styling **container section
+**/
+body {
+  font-family: "Montserrat", "Poppins";
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/**
+* ! styling **content section
+**/
+
+.text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  /* margin-top: 20px; */
+}
+
+/**
+* ! styling **form section
+**/
+form {
+  /* max-width: 400px; */
+
+  width: 450px;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+  padding: 40px;
+  /* width: 100%; */
+}
+
+/**
+* ! styling form **social section
+**/
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+span {
+  color: #2563ea;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn1,
+.btn2 {
+  display: flex;
+  padding: 10px 5px;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: #2563ea;
+  color: #fff;
+}
+.or {
+  text-align: center;
+}
+.question {
+  font-size: 15px;
+  margin-bottom: 0;
+  color: #2563ea;
+}
+
+/**
+* ! styling form **input section
+**/
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+form div input {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #c4c4c4;
+  /* padding: 0px 30px; */
+  /* Commented the padding out because it was making the text boxes overflow out of the outer div */
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+}
+
+form input:focus {
+  border: 2px solid #2563ea;
+}
+
+/**
+* ! styling form icon section
+**/
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.failure-icon,
+.success-icon {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+  /* opacity: 0; */
+}
+
+button {
+  /* margin-top: 15px; */
+  height: 45px;
+  width: 100%;
+  background-color: #2563ea;
+  border: 2px solid #2563ea;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a {
+  cursor: pointer;
+  color: #2563ea;
+  text-decoration: none;
+}
+/**
+* ! media query section
+**/
+
+/* 
+@media(max-width:900px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    form,.content
+    {
+        width: 100%!important;
+    }
+    .btn{
+        flex-direction: column;
+    }
+    .image{
+        height: 70vh;
+    }
+  
+}
+
+
+@media(max-width:425px)
+{
+    form{
+        padding:20px;
+
+    }
+}
+
+
+
+ */

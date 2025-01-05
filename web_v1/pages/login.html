@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Website Title -->
+    <title>Login</title>
+
+    <!-- Meta Tags For Search Engine Optimiztion -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <!-- CSS Stylesheet Import Link -->
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+  </head>
+  <body>
+    <!-- Website starts-->
+
+    <div class="container">
+      <!-- Form sec starts-->
+
+      <form id="form">
+        <!-- social sec starts-->
+
+        <div class="social">
+          <div class="title">Welcome Back</div>
+        </div>
+
+        <!-- input sec starts-->
+
+        <!--
+                /**
+                * ! user name input here
+                **/
+            -->
+        <div>
+          <label for="username">Customer ID</label>
+
+          <input type="text" name="username" id="username" />
+
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+
+          <input type="password" name="password" id="password" />
+          <!-- <i class="fas fa-check-circle success-icon"></i>
+                <i class="fas fa-exclamation-circle failure-icon"></i> -->
+
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" id="submit">Login</button>
+        <br />
+
+        <div class="question">
+          Don't have an account? <a href="./registration.html">Register</a>
+        </div>
+      </form>
+      <script src="../js/login.js"></script>
+    </div>
+  </body>
+</html>

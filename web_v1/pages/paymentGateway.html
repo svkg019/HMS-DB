@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Bill</title>
+    <link rel="stylesheet" href="../css/payementGateway.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="header">
+            <span>Welcome, <span id="username">Customer</span></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <form id="billForm">
+            <div class="form-group">
+                <label for="billAmount">Bill Amount</label>
+                <input type="text" id="billAmount" value="$150.00" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="paymentMode">Mode of Payment</label>
+                <select id="paymentMode">
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                </select>
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="back-btn" onclick="goToHome()">Back to Home</button>
+                <button type="button" class="pay-now-btn" onclick="goToPaymentPage()">Pay Now</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="payment-container" id="cardDetails" style="display: none;">
+        <form id="cardForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="number" id="cardNumber" minlength="16" maxlength="16" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cardHolderName">Card Holder Name</label>
+                <input type="text" id="cardHolderName" minlength="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" minlength="3" maxlength="3" required>
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="back-btn" onclick="goToBillPage()">Back</button>
+                <button type="submit" class="pay-now-btn">Make Payment</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/paymentGateway.js"></script>
+</body>
+</html>

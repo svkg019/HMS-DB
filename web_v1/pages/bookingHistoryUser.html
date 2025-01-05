@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings</title>
+    <link rel="stylesheet" href="../css/bookingHistory.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
+      .sidebar a:hover,
+      .sidebar a i:hover {
+        background-color: rgb(240, 246, 255);
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+        padding: 15px;
+        font-size: 18px;
+        height: 100vh;
+        box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar i {
+        background-color: transparent;
+        margin-right: 10px;
+      }
+
+      .sidebar a {
+        padding: 0 5px 0 5px;
+        color: #475569;
+        border-radius: 10px;
+      }
+
+      .sidebar a:hover {
+        color: rgba(0, 80, 146, 0.808);
+      }
+
+      .logo {
+        background-image: linear-gradient(to right, #3290b8, #3e2eb8);
+        color: transparent;
+        background-clip: text;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Poppins";
+      }
+
+      nav {
+        grid-area: navbar;
+      }
+
+      aside {
+        grid-area: sidebar;
+      }
+
+      main {
+        grid-area: main;
+        padding: 15px 60px 0px 60px;
+        background-color: #f1f5f9;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!--Header component -->
+    <nav>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+        "
+      >
+        <div style="display: flex; gap: 5px; align-items: center">
+          <i
+            class="ph-bold ph-building"
+            style="color: #3290b8; font-size: 30px"
+          ></i>
+          <p class="logo">Luxury Hotels</p>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <p>Welcome, John Doe</p>
+          <i class="ph-light ph-sign-out" style="font-size: 25px"></i>
+          <p>Logout</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar Component -->
+    <aside>
+      <div class="sidebar">
+        <a href="../index.html"><i class="ph ph-house"></i>Home</a>
+        <a href="./reservation.html"
+          ><i class="ph ph-calendar-blank"></i>Reservation</a
+        >
+        <a href="./bookingHistoryUser.html"
+          ><i class="ph ph-clock-counter-clockwise"></i>History</a
+        >
+        <a href="#"><i class="ph ph-book-open"></i>Bookings</a>
+        <a href="./billing.html"><i class="ph ph-file-text"></i>Billing</a>
+        <a href="./feedback.html"><i class="ph ph-headphones"></i>Support</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Your Bookings</h1>
+
+      <!-- Booking Cards -->
+      <div class="booking-card">
+        <div class="card-details">
+          <h2 class="room-type">Deluxe Suite</h2>
+          <p class="booking-id">Booking ID: BK789</p>
+          <p class="dates">
+            <span><i class="ph ph-calendar"></i> Check-in: 2024-03-20</span>
+            <span><i class="ph ph-calendar"></i> Check-out: 2024-03-25</span>
+          </p>
+          <p class="guests"><i class="ph ph-user"></i> Guests: 2 Adults</p>
+        </div>
+        <div class="card-footer">
+          <p class="price">$1200</p>
+          <span class="status confirmed">Confirmed</span>
+        </div>
+      </div>
+
+      <div class="booking-card">
+        <div class="card-details">
+          <h2 class="room-type">Executive Room</h2>
+          <p class="booking-id">Booking ID: BK790</p>
+          <p class="dates">
+            <span><i class="ph ph-calendar"></i> Check-in: 2024-04-01</span>
+            <span><i class="ph ph-calendar"></i> Check-out: 2024-04-03</span>
+          </p>
+          <p class="guests"><i class="ph ph-user"></i> Guests: 1 Adult</p>
+        </div>
+        <div class="card-footer">
+          <p class="price">$800</p>
+          <span class="status pending">Pending</span>
+        </div>
+      </div>
+    </main>
+    <script src="../js/bookingHistoryUser.js"></script>
+  </body>
+</html>

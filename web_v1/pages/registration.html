@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Website Title -->
+    <title>Registration</title>
+
+    <!-- Meta Tags For Search Engine Optimiztion -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS Stylesheet Import Link -->
+    <link rel="stylesheet" type="text/css" href="../css/registration.css" />
+  </head>
+  <body>
+    <!-- Website starts-->
+
+    <div class="container">
+      <!-- Form sec starts-->
+
+      <form id="form">
+        <!-- social sec starts-->
+
+        <div class="social">
+          <div class="title">Create Account</div>
+        </div>
+
+        <!-- input sec starts-->
+
+        <!--
+                /**
+                * ! user name input here
+                **/
+            -->
+        <div>
+          <label for="name">Customer Name</label>
+
+          <input type="text" name="name" id="name" />
+
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <!-- <i class="fas fa-envelope"></i> -->
+          <input type="email" name="email" id="email" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="mobile">Mobile:</label>
+          <div class="mobile">
+            <select class="one" id="mobile-country-code">
+              <option value="+1">+91</option>
+              <option value="+1">+88</option>
+            </select>
+            <input
+              type="number"
+              id="mobile-number"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+        </div>
+        <div>
+          <label>
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your address"> </textarea>
+          </label>
+        </div>
+
+        <div>
+          <label for="username">Customer ID</label>
+
+          <input type="text" name="username" id="username" />
+
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+
+          <input type="password" name="password" id="password" />
+          <!-- <i class="fas fa-check-circle success-icon"></i>
+                <i class="fas fa-exclamation-circle failure-icon"></i> -->
+
+          <div class="error"></div>
+        </div>
+        <div>
+          <label for="confirm">Confirm Password</label>
+
+          <input type="password" name="confirm" id="confirm" />
+          <!-- <i class="fas fa-check-circle success-icon"></i>
+                <i class="fas fa-exclamation-circle failure-icon"></i> -->
+
+          <div class="error"></div>
+        </div>
+
+        <div class="buttons">
+          <!-- <button type="submit">Register</button> -->
+
+          <!-- Trigger the modal with a button -->
+          <div class="register">
+            <button type="submit">Register</button>
+            <button
+              type="button"
+              id="modalButton"
+              data-toggle="modal"
+              data-target="#myModal"
+              style="display: none"
+            >
+              Register
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header first">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <br />
+                    <br />
+                    <i class="fa fa-check-circle"></i>
+                    <br />
+                    <br />
+                    <br />
+                    <h4 class="modal-title">
+                      Consumer Registration successful!
+                    </h4>
+                  </div>
+                  <div class="modal-body user-id">
+                    <p>Your User ID is: <span>USER599271</span></p>
+                  </div>
+                  <div class="modal-footer footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reset">
+            <button type="button" id="reset">Reset</button>
+          </div>
+        </div>
+
+        <div class="question">
+          Already have an account? <a href="./login.html">Login instead</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="../js/registration.js"></script>
+  </body>
+</html>
+ 
